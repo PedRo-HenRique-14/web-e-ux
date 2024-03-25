@@ -1,0 +1,131 @@
+@font-face {
+    font-family: BalooPaaji2;
+    src: url(./fonts/BalooPaaji2-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100vh;
+    background-color: #840f9a;
+    margin: 0px;
+    font-family: BalooPaaji2, sans-serif;
+    background: rgb(208,51,184);
+    background: linear-gradient(90deg, rgba(208,51,184,1) 0%, rgba(104,11,146,1) 57%, rgba(43,2,129,1) 100%);
+}
+
+header {
+    background-color: rgba(224, 224, 224, 0.137);
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.400);
+    margin-bottom: 2px radial-gradient(circle, rgba(107,13,148,1) 32%, rgba(239,246,255,1) 100%);
+}
+
+section#get-started-section{
+    background-color: #e8f2ff;
+    width: 750px;
+    height: 100%;
+    padding-top: 60px;
+    box-shadow: 2px 25px 30px rgba(0, 0, 0, 0.400);
+}
+
+div#header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    margin: 0px 70px 0px 70px;
+}
+
+div#get-started-container {
+    background-color: #e8f2ff;
+    width: 400px;
+    margin: 50px auto 0px auto;
+}
+
+h1#logo {
+    font-size: 26pt;
+    font-weight: normal;
+}
+
+h1#get-started-title {
+    color: #313336;
+    font-size: 56pt;
+    text-transform: uppercase;
+    margin: 0px auto 50px auto;
+    width: auto;
+    line-height: 0.8;
+    font-weight: normal;
+}
+
+h2#get-started-subtitle {
+    color: #b9c6dd;
+    text-transform: uppercase;
+    font-size: 30pt;
+    font-weight: normal;
+    margin: 10px 0px 10px 0px;
+    line-height: 0.8;
+}
+
+p#get-started-description {
+    color: #b9c6dd;
+    margin: 10px 0px 10px 0px;
+    line-height: 1.1;
+    text-align: justify;
+}
+
+button#get-started-button {
+    color: #543999;
+    background: linear-gradient(120deg, rgba(200,107,251,1) 27%, rgba(103,34,221,1) 100%);
+    text-transform: uppercase;
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18pt;
+    margin: 30px 0px 30px 0px;
+}
+
+a.menu-item {
+    font-size: 16pt;
+    color: #c292d0;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+#login {
+    width: 75px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#home {
+    text-decoration: none;
+}
+
+#products {
+    text-decoration: none;
+}
+
+#resources {
+    text-decoration: none;
+}
+
+#blog {
+    text-decoration: none;
+}
