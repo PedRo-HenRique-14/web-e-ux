@@ -27,6 +27,7 @@ header {
     font-family: Montserrat;
     width: 100%;
     height: 8.9%;
+    max-height: 82px;
 }
 
 div.logo {
@@ -40,8 +41,8 @@ div.logo {
 }
 
 img.logo {
-    width: 82.926829268293%;
-    height: 82.926829268293%;
+    width: 68px;
+    height: 68px;
     justify-self: flex-start;
     border-radius: 50px;
 }
@@ -82,6 +83,76 @@ header ul li a:hover {
     color: #ffffff;
 }
 
+div.scroll {
+    height: 92.47311827957%;
+    max-height: 91.1vh;
+    overflow-y: scroll;
+}
+
+div.scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+section.introduction {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    max-height: 91.1vh;
+}
+
+div.about {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    gap: 36px;
+    max-height: 91.1vh;
+}
+
+div.about h1, p, hr {
+    width: 76%;
+    font-family: Rubik;
+}
+
+div.about h1 {
+    font-size: 50pt;
+    font-weight: 400;
+}
+
+div.about p {
+    font-size: 30pt;
+}
+
+img.arrow {
+    margin-top: 75px;
+    width: 110px;
+    height: 110px;
+}
+
+div.avatar {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding-top: 145px;
+    max-height: 91.1vh;
+}
+
 img.avatar {
     border-radius: 140px;
+    width: 420px;
+    height: 420px;
+}
+
+div.division {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+div.division hr {
+    width: 36.784025223332%;
+    border: 1px solid #ffffff;
 }
