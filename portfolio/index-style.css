@@ -29,13 +29,31 @@ header {
     height: 8.9%;
 }
 
+div.logo {
+    padding-left: 2.8125%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+    width: 4.2708333333333%;
+    height: 100%;
+}
+
+img.logo {
+    width: 82.926829268293%;
+    height: 82.926829268293%;
+    justify-self: flex-start;
+    border-radius: 50px;
+}
+
 header ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     gap: 97px;
-    padding: 0px;
+    padding: 0px 7.0833333333333% 0px 0px;
     list-style-type: none;
     height: 100%;
 }
