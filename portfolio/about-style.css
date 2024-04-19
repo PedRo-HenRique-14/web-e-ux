@@ -13,58 +13,58 @@ body {
 }
 
 div.content {
-    width: 100%;
-    height: 100vh;
     background: rgb(18,18,18);
     background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(23,23,23,1) 50%, rgba(37,37,37,1) 100%);
+    height: 100vh;
+    width: 100%;
 }
 
 header {
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #212121;
+    display: flex;
     font-family: Montserrat;
-    width: 100%;
     height: 8.9%;
+    justify-content: center;
     max-height: 82px;
+    width: 100%;
 }
 
 div.logo {
-    padding-left: 2.8125%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    justify-self: start;
-    width: 4.2708333333333%;
+    display: flex;
     height: 100%;
+    justify-content: center;
+    justify-self: start;
+    padding-left: 2.8125%;
+    width: 4.2708333333333%;
 }
 
 img.logo {
-    width: 68px;
+    border-radius: 50px;
     height: 68px;
     justify-self: flex-start;
-    border-radius: 50px;
+    width: 68px;
 }
 
 header ul {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
     gap: 97px;
-    padding: 0px 7.0833333333333% 0px 0px;
-    list-style-type: none;
     height: 100%;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px 7.0833333333333% 0px 0px;
 }
 
 header ul li {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100%;
     justify-content: center;
     width: 88px;
-    height: 100%;
 }
 
 header ul li.about {
@@ -73,14 +73,14 @@ header ul li.about {
 
 header ul li a {
     color: #bababa;
+    font-size: 16pt;
     text-decoration: none;
     text-align: center;
-    font-size: 16pt;
 }
 
 header ul li a:hover {
-    font-weight: 600;
     color: #ffffff;
+    font-weight: 600;
 }
 
 div.scroll {
@@ -100,14 +100,14 @@ section.introduction {
 }
 
 div.about {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
     align-items: center;
-    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    font-family: Rubik;
     gap: 36px;
     max-height: 91.1vh;
-    font-family: Rubik;
+    padding-top: 180px;
+    width: 50%;
 }
 
 div.about hr {
@@ -123,9 +123,9 @@ div.presentation {
 }
 
 div.title h1 {
-    width: 100%;
     font-size: 50pt;
     font-weight: 400;
+    width: 100%;
 }
 
 div.presentation p {
@@ -133,44 +133,44 @@ div.presentation p {
 }
 
 div.arrow {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 200px;
+    display: flex;
     height: 200px;
+    justify-content: center;
+    width: 200px;
 }
 
 img.arrow {
     animation: arrow-bouncing 1s alternate ease infinite;
-    width: 110px;
     height: 110px;
+    width: 110px;
 }
 
 div.avatar {
     display: flex;
-    width: 50%;
     justify-content: center;
-    padding-top: 145px;
     max-height: 91.1vh;
+    padding-top: 145px;
+    width: 50%;
 }
 
 img.avatar {
     border-radius: 140px;
-    width: 420px;
     height: 420px;
+    width: 420px;
 }
 
 div.division {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 120px;
+    justify-content: center;
 }
 
 div.division hr {
-    width: 36.784025223332%;
     border: 1px solid #ffffff;
+    width: 36.784025223332%;
 }
 
 @keyframes arrow-bouncing {
