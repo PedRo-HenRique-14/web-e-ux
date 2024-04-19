@@ -14,7 +14,7 @@ body {
 
 div.content {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgb(18,18,18);
     background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(23,23,23,1) 50%, rgba(37,37,37,1) 100%);
 }
@@ -84,8 +84,7 @@ header ul li a:hover {
 }
 
 div.scroll {
-    height: 92.47311827957%;
-    max-height: 91.1vh;
+    height: calc(100vh - 82px);
     overflow-y: scroll;
 }
 
@@ -108,24 +107,41 @@ div.about {
     padding-top: 180px;
     gap: 36px;
     max-height: 91.1vh;
-}
-
-div.about h1, p, hr {
-    width: 76%;
     font-family: Rubik;
 }
 
-div.about h1 {
+div.about hr {
+    width: 76%;
+}
+
+div.title {
+    width: 76%;
+}
+
+div.presentation {
+    width: 76%;
+}
+
+div.title h1 {
+    width: 100%;
     font-size: 50pt;
     font-weight: 400;
 }
 
-div.about p {
+div.presentation p {
     font-size: 30pt;
 }
 
+div.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
 img.arrow {
-    margin-top: 75px;
+    animation: arrow-bouncing 1s alternate ease infinite;
     width: 110px;
     height: 110px;
 }
@@ -155,4 +171,10 @@ div.division {
 div.division hr {
     width: 36.784025223332%;
     border: 1px solid #ffffff;
+}
+
+@keyframes arrow-bouncing {
+    to {
+        transform: translateY(30px);
+    }
 }
