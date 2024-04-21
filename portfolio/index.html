@@ -24,12 +24,10 @@
                 <h1>Desenvolvedor de Software</h1>
                 <hr>
                 <h2>Sobre mim</h2>
-                <p>
-                    Me chamo Pedro e sou desenvolvedor de software. 
-                    Atualmente estou cursando Engenharia de Software. 
-                    Tenho conhecimento em desenvolvimento com Java, C#, HTML, entre outros.
+                <p id="description">
+                    Me chamo Pedro, tenho [idade] anos e sou desenvolvedor de software. Atualmente estou cursando Engenharia de Software. Tenho conhecimento em desenvolvimento com Java, C#, HTML, entre outros.
                 </p>
-                <button>Saiba mais</button>             
+                <button onclick="window.location.href = './about.html'">Saiba mais</button>             
             </div>
             <div class="tools-content">
                 <img src="./img/animated-console.gif" alt="Console" class="console">
@@ -37,5 +35,12 @@
             </div>
         </section>
     </div>
+    <script>
+        var today = new Date(Date.now());
+        var bd = new Date('Sep 05 2004');
+        var age = (((today - bd)/1000)/86400)/365;
+        var description = document.getElementById("description").innerHTML;
+        document.getElementById("description").innerHTML = description.replace("[idade]", `${Math.round(age - 0.5)}`);
+    </script>
 </body>
 </html>
