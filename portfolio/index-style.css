@@ -40,8 +40,8 @@ div.logo {
 }
 
 img.logo {
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
-    height: fit-content;
     justify-self: flex-start;
     width: 100%;
 }
@@ -153,7 +153,7 @@ div.tools-content {
 }
 
 div.tools-content img {
-    height: fit-content;
+    aspect-ratio: 1 / 1;
     margin-top: 100px;
     margin-bottom: 24px;
     width: 65.208333333333%;
