@@ -22,8 +22,8 @@
         </header>
         <div class="scroll">
             <section class="introduction">
-                <div class="about">
-                    <div class="title">
+                <div class="introduction__content">
+                    <div class="introduction__title">
                         <h1>Oi! Eu sou o Dodas_ &#x1F44B</h1>
                     </div>
                     <hr>
@@ -44,6 +44,18 @@
                 <img src="./img/disc.png" alt="">
                 <hr>
             </div>
+            <section class="about-me">
+                <div class="about-me__title">
+                    <h2>Sobre mim</h2>
+                </div>
+                <div class="about-me__division">
+                    <hr>
+                </div>
+                <div class="about-me__description">
+                    <p id="description-1">Eu me chamo Pedro, atualmente eu tenho [idade] anos. Sou apaixonado por tecnologia, por isso escolhi estudar e trabalhar como desenvolvedor. Desde muito novo tenho essa fixação por computadores, e estudo sobre isso desde sempre.</p>
+                    <p>Atualmente estou cursando Engenharia de Software, e pretendo trabalhar na área assim que possível.</p>
+                </div>
+            </section>
             <section class="languages-tools">
                 <div class="lt-title">
                     <h1>Linguagens e ferramentas</h1>
@@ -84,5 +96,12 @@
             </section>
         </div>
     </div>
+    <script>
+        var today = new Date(Date.now());
+        var bd = new Date('Sep 05 2004');
+        var age = (((today - bd)/1000)/86400)/365;
+        var description = document.getElementById("description-1").innerHTML;
+        document.getElementById("description-1").innerHTML = description.replace("[idade]", `${Math.round(age - 0.5)}`);
+    </script>
 </body>
 </html>
