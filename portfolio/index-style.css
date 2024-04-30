@@ -153,7 +153,7 @@ div.tools-content {
 }
 
 div.tools-content img {
-    aspect-ratio: 1 / 1;
+    height: fit-content;
     margin-top: 100px;
     margin-bottom: 24px;
     width: 65.208333333333%;
