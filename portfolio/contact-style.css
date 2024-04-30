@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    color: #FFFFFF;
+    margin: 0 0;
+}
+
+body {
+    background: rgb(18,18,18);
+    height: 100vh;
+    margin: 0px;
+    width: 100vw;
+}
+
+div.content {
+    background: rgb(18,18,18);
+    background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(23,23,23,1) 50%, rgba(37,37,37,1) 100%);
+    font-family: Rubik;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    align-items: center;
+    background-color: #212121;
+    display: flex;
+    font-family: Montserrat;
+    height: 8.9%;
+    justify-content: center;
+    width: 100%;
+}
+
+div.logo {
+    aspect-ratio: 1 / 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-self: start;
+    padding-left: 2.8125%;
+    width: 3.5416666666667%;
+}
+
+img.logo {
+    border-radius: 50%;
+    height: fit-content;
+    justify-self: flex-start;
+    width: 100%;
+}
+
+header ul {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 97px;
+    height: 100%;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0 calc(3.5416666666667% + 2.8125%) 0 0;
+}
+
+header ul li {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 88px;
+}
+
+header ul li.contact {
+    border-bottom: 2px solid #ffffff;
+}
+
+header ul li a {
+    color: #bababa;
+    font-size: 16pt;
+    text-decoration: none;
+    text-align: center;
+    transition: font-weight 100ms;
+}
+
+header ul li a:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Contact Section */
+
+div.contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 91.1vh;
+    width: 100%;
+}
+
+div.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+div.title h1 {
+    font-size: 50pt;
+    font-weight: 400;
+    padding-top: 3%;
+}
+
+div.contact-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4.1666666666667%;
+}
+
+div.contact-item {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 50%;
+}
+
+div.contact-item h2 {
+    font-size: 28pt;
+    font-weight: 400;
+}
+
+div.contact-item div {
+    align-items: center;
+    background-color: #2F2F2F;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+div.contact-item div a {
+    font-size: 24pt;
+    text-decoration: none;
+}
