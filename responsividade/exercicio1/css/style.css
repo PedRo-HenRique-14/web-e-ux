@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.site-body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    background-color: #353535;
+    color: white;
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: relative
+}
+
+.logo {
+    font-size: 16pt;
+}
+
+.search-bar {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    justify-content: center;
+}
+
+.search-bar input {
+    border-radius: 50vw;
+    border-style: none;
+    height: 50%;
+    text-indent: 10px;
+    width: 30%;
+}
+
+.menu-nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: 90vh;
+        padding: 5vh 0;
+        width: 40vw;
+    }
+
+    .search-bar {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 0;
+        height: 10vh;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-bar input {
+        border-radius: 50vw;
+        border-style: none;
+        height: 35%;
+        text-indent: 10px;
+        width: 80%;
+    }
+
+    .menu-nav {
+        align-items: start;
+        display: flex;
+        padding-left: 25px;
+        padding-top: 20px;
+        width: calc(100% - 25px);
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 40px;
+        list-style: none;
+    }
+}
