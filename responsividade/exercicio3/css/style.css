@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.site-body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100% - 60px);
+    padding: 30px;
+    width: calc(100% - 60px);
+}
+
+.card {
+    background-color: #5a5a5a;
+    border-radius: 3vw;
+    padding: 20px;
+    width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+    .site-body {
+        align-items: normal;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .card {
+        width: 25%;
+    }
+}

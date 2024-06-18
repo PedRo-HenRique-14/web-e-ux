@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: calc(100vw);
+
+    overflow-y: hidden;
+}
+
+.site-body {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        width: 50%;
+    }
+}
